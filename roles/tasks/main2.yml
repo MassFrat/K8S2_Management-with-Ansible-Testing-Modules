@@ -1,1 +1,44 @@
+---
+- name: Create K8S namespaces info. and Test modules
+  hosts: all
+  become: yes 
+  gather_facts: yes 
+  vars:
+    namespace: "ansible-demo"
 
+  tasks:
+    - name: Create K8S namespaces
+      kubernetes.core.k8s:
+        name: "{{ namespace }}"
+        api_version: v1
+        kind: Namespace
+        state: present
+      register: namespaces
+
+    - name: Display namespace creation result
+      debug:
+        msg: "Namespace {{ namespace }} created successfully"
+        
+     - name: Retrieve namespaces info.
+      kubernetes.core.k8s_info:
+        api_version: v1
+        kind: Namespace
+        kubeconfig: /etc/kubernetes/admin.conf
+      register: namespaces
+
+    - name: Display namespace names
+      debug:
+        msg: "Found {{ namespaces.resources | length }} namespaces"
+
+    - name: Get Cluster Running Pods
+      kubernetes.core.k8s_info:
+        kind: Pod
+        kubeconfig: /etc/kubernetes/admin.conf
+        field_selectors:
+          - status.phase=Running
+      register: pods
+
+    - name: Print all pods
+      debug:
+        msg: "{{ pods.resources | map(attribute='metadata.name') | list }}"
+       
