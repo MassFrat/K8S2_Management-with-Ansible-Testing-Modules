@@ -1,6 +1,6 @@
 ---
 - name: Create K8S namespaces info. and Test modules
-  hosts: all
+  hosts: localhost
   become: yes 
   gather_facts: yes 
   vars:
