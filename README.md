@@ -12,7 +12,9 @@ Supports check mode.
 python >= 3.9
 
 kubernetes >= 24.2.0
+
 PyYAML >= 3.11
+
 jsonpatch
 
 Managing Kubernetes clusters and applications can be complex, especially when dealing with multiple environments, scaling requirements, and configuration management. Ansible provides a powerful solution for Kubernetes infrastructure automation through its kubernetes.core collection, which includes the essential k8s modules that enable declarative management of Kubernetes resources.
