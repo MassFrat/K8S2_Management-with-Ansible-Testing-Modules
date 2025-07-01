@@ -8,9 +8,9 @@ Use the kubernetes.core.k8s_info module to obtain a list of items about an objec
 Authenticate using either a config file, certificates, password or token
 Supports check mode.
 
-'''bash
 ## Requirements:
 python >= 3.9
+
 kubernetes >= 24.2.0
 PyYAML >= 3.11
 jsonpatch
