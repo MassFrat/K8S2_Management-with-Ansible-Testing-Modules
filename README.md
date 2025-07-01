@@ -49,4 +49,4 @@ Ansible seamlessly integrates with your existing CI/CD pipelines, configuration 
 # The kubernetes.core.k8s Module Collection
 The kubernetes.core collection is Ansible's official collection for Kubernetes management, providing specialized modules that interact directly with the Kubernetes API. These modules understand Kubernetes resource types, handle authentication, and provide sophisticated state management capabilities.
 
-## The combination of Ansible's automation capabilities with Kubernetes' container orchestration provides a powerful platform for modern infrastructure management that scales from simple deployments to complex multi-cluster operations.
+### The combination of Ansible's automation capabilities with Kubernetes' container orchestration provides a powerful platform for modern infrastructure management that scales from simple deployments to complex multi-cluster operations.
