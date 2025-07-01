@@ -1,0 +1,8 @@
+---
+- name: Kubernetes Management with Ansible
+  hosts: localhost
+  connection: local
+  gather_facts: no 
+  vars: 
+    namespace: "ansible-demo"
+    app_name: "sample-app"
