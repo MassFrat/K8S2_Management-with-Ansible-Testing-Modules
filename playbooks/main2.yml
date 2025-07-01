@@ -1,0 +1,7 @@
+---
+- name: Create K8S namespaces info. and Test modules
+  hosts: localhost
+  become: yes 
+  gather_facts: yes 
+  vars:
+    namespace: "ansible-demo"
