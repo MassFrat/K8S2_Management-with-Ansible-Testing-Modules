@@ -1,4 +1,5 @@
-# Kubernetes Management with Ansible
+# Kubernetes Management with Ansible 
+
 
 ## Synopsis:
 Use the Kubernetes Python client to perform CRUD operations on K8s objects. 
@@ -8,6 +9,9 @@ Use the kubernetes.core.k8s_info module to obtain a list of items about an objec
 Authenticate using either a config file, certificates, password or token
 Supports check mode.
 
+<br/>
+
+---------------
 ## Requirements:
 python >= 3.9
 
@@ -17,11 +21,18 @@ PyYAML >= 3.11
 
 jsonpatch
 
-Managing Kubernetes clusters and applications can be complex, especially when dealing with multiple environments, scaling requirements, and configuration management. Ansible provides a powerful solution for Kubernetes infrastructure automation through its kubernetes.core collection, which includes the essential k8s modules that enable declarative management of Kubernetes resources.
+---------
 
-This guide explains how Ansible can streamline your Kubernetes operations, reduce manual errors, and provide consistent, repeatable deployments across your infrastructure.
+<br/>
+<br/>
 
-## Why Use Ansible for Kubernetes Management?
+Managing Kubernetes clusters and applications can be complex, especially when dealing with multiple environments, scaling requirements, and configuration management. Ansible provides a powerful solution for Kubernetes infrastructure automation through its kubernetes.core collection, which includes the essential k8s modules that enable declarative management of Kubernetes resources.  
+  
+This guide explains how Ansible can streamline your Kubernetes operations, reduce manual errors, and provide consistent, repeatable deployments across your infrastructure. 
+<br/>
+<br/> 
+
+# Why Use Ansible for Kubernetes Management?
 
 ## Infrastructure as Code Benefits
 Ansible transforms Kubernetes management from imperative commands to declarative infrastructure-as-code practices. Instead of manually running kubectl commands, you define your desired infrastructure state in playbooks that can be version-controlled, reviewed, and automatically executed.
@@ -32,7 +43,10 @@ With Ansible, you can ensure identical configurations across development, stagin
 ## Integration with Existing Workflows
 Ansible seamlessly integrates with your existing CI/CD pipelines, configuration management systems, and operational workflows. You can combine Kubernetes resource management with traditional server configuration, network setup, and application deployment tasks.
 
+<br/>
+<br/>
+
 # The kubernetes.core.k8s Module Collection
 The kubernetes.core collection is Ansible's official collection for Kubernetes management, providing specialized modules that interact directly with the Kubernetes API. These modules understand Kubernetes resource types, handle authentication, and provide sophisticated state management capabilities.
 
-# The combination of Ansible's automation capabilities with Kubernetes' container orchestration provides a powerful platform for modern infrastructure management that scales from simple deployments to complex multi-cluster operations.
+## The combination of Ansible's automation capabilities with Kubernetes' container orchestration provides a powerful platform for modern infrastructure management that scales from simple deployments to complex multi-cluster operations.
