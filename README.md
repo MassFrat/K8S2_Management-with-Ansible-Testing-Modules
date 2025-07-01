@@ -9,6 +9,7 @@ Authenticate using either a config file, certificates, password or token
 Supports check mode.
 
 ## Requirements:
+'''bash
 python >= 3.9
 kubernetes >= 24.2.0
 PyYAML >= 3.11
